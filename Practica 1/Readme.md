@@ -30,10 +30,9 @@ de los elementos dentro de este `<div>`.
   
 Por ultimo para acabar con la estructura nuestra web tendremos el Footer en el que aparecerá un texto con el nombre del desarrollador “DESARROLLADO POR DIEGO JUÁREZ ROMERO” al que le aplicaremos un formato `<h2>` modificado en el CSS y manteniendo la sintonia con el estilo de las demás secciones.
 
-## **Desarrollo de la interfaz básica**
+## Desarrollo de la interfaz básica
 
-Ahora que tenemos la estructura que va a seguir la web, hay que empezar a crear nuevas páginas y darles funcionalidad a estas, se mantendran la estructura para todas las páginas de la web, solo cambiara el contenido dentro de <Section>.
-
+Ahora que tenemos la estructura que va a seguir la web, hay que empezar a crear nuevas páginas y darles funcionalidad a estas, se mantendran la estructura para todas las páginas de la web, solo cambiara el contenido dentro de <Section>
 #### Pagina ubicacion.
 
 Ubicación en la que únicamente he añadido un iframe con un enlace a googlemaps y algunas propiedades dentro de este para darle una forma que se adecuara con la que iba a seguir la página.
@@ -109,7 +108,7 @@ Para terminar, se mostrará un `alert` con javascript que indicara que la ciudad
 
 2. Si el usuario pulsa el botón de modificar ciudad mandará el formulario a la página `<modificarciudad.asp>` que contendrá código asp para modificar la ciudad de la BD. Esta página sera similar a `<eliminarciudad.asp>` salvo que la consulta que ejecutara será un `update` a ciudad en el que cambiaremos los dos datos obtenidos del formulario cuando la `idciudad` sea la obtenida en el formulario.
 
-3.Si pulsamos en el botón de añadir ciudad mandará el formulario a la página `<añadirciudad.asp>`, en esta página debemos de obtener el `idciudad` máximo para al añadir una nueva ciudad sumarle 1 a ese número, una vez tenemos el `idciudad` que le vamos a asignar a la nueva ciudad creamos un formulario que será semejante al de modificar ciudad excepto que en el `<input>` de `idciudad` vendrá con value `readonly` del `idciudad` obtenido previamente, este formulario se enviara a la página `<añadirciudadform.asp>`.
+3. Si pulsamos en el botón de añadir ciudad mandará el formulario a la página `<añadirciudad.asp>`, en esta página debemos de obtener el `idciudad` máximo para al añadir una nueva ciudad sumarle 1 a ese número, una vez tenemos el `idciudad` que le vamos a asignar a la nueva ciudad creamos un formulario que será semejante al de modificar ciudad excepto que en el `<input>` de `idciudad` vendrá con value `readonly` del `idciudad` obtenido previamente, este formulario se enviara a la página `<añadirciudadform.asp>`.
 
 #### Página Añadirciudadform.asp.
 
