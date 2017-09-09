@@ -1,0 +1,132 @@
+/*Para el titulo de la cabecera*/
+h1
+{
+	text-shadow: 4px 4px  #e35205;
+	color: white;
+	font-family:"Arial","Helvetica","sans-serif";
+	font-size: 30px;
+	margin-top:-100px;
+	margin-left:270px;
+	text-decoration:underline;
+}
+/*Para el foot*/
+h2
+{
+	text-shadow: 4px 4px  #e35205;
+	color: white;
+	font-family: "Arial","Helvetica","sans-serif";
+	font-size: 30px;
+	text-decoration:underline;
+}
+/*Para elementos del menu navegacional*/
+h4{
+	color: white;
+	text-shadow: 4px 4px  #e35205;
+	font-family: "Arial","Helvetica","sans-serif";
+	font-size: 22px;
+	margin-top:0px;
+}
+/*Titulo de contenidos*/
+h3
+{
+	color: white;
+	text-shadow: 3px 3px  #e35205;
+	font-family: "Arial","Helvetica","sans-serif";
+	font-size: 40px;
+	text-align: center;
+	text-decoration:underline;
+	
+}
+/*Para titulo de texto*/
+h5
+{
+text-shadow: 1px 1px  #e35205;
+color:white;
+text-align:left;
+font-size:24;
+text-decoration:underline;
+
+	
+}
+h7
+{
+margin-left:25%;
+height:40px;
+text-align:center;
+color:white;
+border:solid;
+background-color:#e35205;
+font-size:18px;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+h8
+{
+}
+
+
+/*Formato para texto*/
+p 
+{
+color:white;
+text-align:left;
+font-size:18;	
+}
+iframe
+{
+margin-left: 25%;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+/*Centramos la tabla y margenes arriba y abajo*/
+table
+{
+margin:auto;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+/*Para los titulos de las tablas*/
+th
+{
+
+height:20px;
+text-align:center;
+color:white;
+border:solid;
+background-color:#e35205;
+font-size:12px;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*Para las columnas de las tablas*/
+td
+{
+color:white;
+border:solid;
+background-color:#e35205;
+font-size:12px;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+ -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+h8 a
+{
+/*Con esto le quitamos el subrayado del enlace*/
+text-decoration:none;
+background:#e35205;
+padding:10px 25px; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}

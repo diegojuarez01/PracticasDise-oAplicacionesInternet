@@ -1,0 +1,324 @@
+body
+{
+/*Propiedades para el body: color de fondo naranja. */
+	background-color:#FFB300;
+ 	margin:0 auto;
+}
+header
+{
+	height: 150px;
+	width: 1000px;
+	background-color:#FF5800;
+	margin:0 auto;
+}
+	#logo	
+		{
+/*Tamaño del logo*/
+			height: 150px;
+			width: 150px;
+			float: left;
+
+		}
+	#titulo
+		{
+/*Tamaño del titulo + posicionamiento */
+			text-align:center;
+			height:150px;
+			width: 850px;
+			float:letf;
+		}
+	nav	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF5800;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color:#FFB300;
+}
+/*Contendra el menu de nuestra web*/
+nav
+{	margin:30 auto;
+	height: auto;
+	width: 1000px;
+	background-color:#FF5800;
+	display:block;
+	float:letf;
+}
+
+section
+{
+	height:auto;
+	width:1000px;
+	margin:0 auto;
+	
+}
+#contenido
+{
+margin:0 auto;
+}
+footer
+{
+	height: 100px;
+	width: 1000px;
+	margin:0 auto;
+	
+}
+#titulofoot
+{
+	height: 100px;
+	width: 1000px;
+	margin:0 auto;
+	background-color:#FF5800;
+	text-align:center;
+	padding-top:15px;
+}
+
+
+/*Para los formularios*/
+
+form
+{
+width:1000px;
+}
+
+/*Bloque donde se encuentran los botones para 
+enviar formulario de consultar y para vaciarlo*/
+#enviar
+{
+margin-left:auto;
+}
+/*Bloque donde se encuentran los botones para 
+enviar formulario de reserva*/
+#reserva
+{
+margin-top:20px;
+margin-left:35%;
+}
+div {
+  margin: .4em 0;
+}
+div label {
+  width: 1%;
+  float: left;
+}
+input[type=submit] {
+    margin-top:20px;
+    margin-right:35px;
+	margin-bottom:20px;
+    padding:10px 25px; 
+    background:#e35205; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=reset] {
+    margin-top:20px;
+	margin-bottom:20px;
+    padding:10px 25px; 
+    background:#e35205; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=password]
+{
+    margin-top:10px;	
+    margin-left:0px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+form label
+{
+color:white;
+margin-left:35%;
+margin-top:10px;
+font-size:20px;
+}
+
+form select
+{
+    margin-top:10px;	
+    
+    margin-bot:10px;
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#volveratras
+{
+margin-left:25%;
+margin-top:30px;
+}
+
+button 
+{
+	margin-top:20px;
+    margin-right:35px;
+	margin-bottom:20px;
+    padding:10px 25px; 
+    background:#e35205; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#enviar input[type=button]
+{
+    margin-top:20px;
+    margin-right:35px;
+	margin-bottom:20px;
+    padding:10px 25px; 
+    background:#e35205; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=button]   
+{
+	margin-top:20px;
+	margin-left:35px;
+    margin-right:35px;
+    padding:10px 25px; 
+    background:#e35205; 
+    border:0 none;
+    color:white;
+/*Aparecera una mano en nuestro cursor al pasar el raton por el boton*/
+    cursor:pointer;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+} 
+#Formularioreserva label
+{
+color:white;
+margin-left:35%;
+margin-top:5px;
+margin-bot:10px;
+font-size:20px;
+}
+#Formularioreserva input[type=text]
+{
+    margin-top:5px;	
+    margin-bot:20px;
+    margin-left:15px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+#Formularioreserva input[type=number]
+{
+    margin-top:10px;	
+    margin-bottom:20px;
+    margin-left:15px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+#contenido input[type=text]
+{
+    margin-top:10px;	
+	margin:auto;
+    margin-bottom:20px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+#contenido input[type=file]
+{
+	margin-top:10px;	
+	margin:auto;
+	margin-left:25px;
+    margin-bottom:20px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+	
+#contenido input[type=date]
+{
+    margin-top:10px;	
+	margin:auto;
+    margin-bottom:20px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+#contenido input[type=number]
+{
+    margin-top:10px;	
+	margin:auto;
+    margin-bottom:20px;	
+    padding:5px;
+    background:#e35205;
+    color:white;
+    border:0 none;
+/*Le quitamos los bordes de las esquinas para darle forma redonda*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
