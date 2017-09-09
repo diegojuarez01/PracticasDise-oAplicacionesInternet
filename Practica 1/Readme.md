@@ -3,20 +3,17 @@ Aplicaciones Web con ASP, JSP, Ajax y Java Applets.
 # **Estructura de las páginas**
 Decidir como estructurar la página (aplicarlo a la página de inicio que servira de guia para las demás)
 
-# * Header (compuesto por 2 elementos)
+## Header (compuesto por 2 elementos)
   1. Una imagen que sera nuestro logo de empresa.
   2. Titulo de la web ("YOUNG TU WEB PARA VIAJES AEREOS").
- En la parte del CSS se aplica un color similar al del logo siguiendo de ejemplo en toda la web, ademas de los tamaños de los elementos que componen el header.
+En la parte del CSS se aplica un color similar al del logo siguiendo de ejemplo en toda la web, ademas de los tamaños de los elementos que componen el header.
+## Menú navegacional
+Este menu navegacional esta compuesto por listas y enlaces para re direccionar al usuario a otra  de las páginas del proyecto cuando 
+se pulse sobre ellos, con CSS le he dado formato a la letra,cambiado el color de fondo, modificado los bordes, controlado los márgenes y aplicado algún efecto como el que se produce al poner el cursor encima de algún elemento de la lista (cambiando su color uno más claro y desplazandose el elemento para abajo).
 
-Además, luego le aplicaremos a la parte donde se encuentra el título de la web con CSS colores parecidos
-a los del logo que formaran parte del color de toda la web y por su puesto el tamaño que ocupara,
-este tamaño habrá que aplicárselo a los elementos que forman la web.
-A continuación, he creado un menú navegacional con listas y enlaces para re direccionar al usuario a otra página cuando 
-se pulse sobre ellos, con CSS le he dado formato a la letra, he cambiado también el color de fondo y 
-hemos puesto el mismo que el del header, he modificado los bordes, controlar los márgenes y algún efecto
-como el que se produce al poner el cursor encima de algún elemento de la lista, que cambia su color por 
-uno más claro y se desplaza para abajo. Después de tener este menú navegacional creado solo hay que ir 
-añadiendo las páginas que se quieran tener en el menú.
+A este menu navegacional le iremos insertando todas las paginas de nuestro proyecto.
+
+
 Ahora he pasado a crear el apartado Section que será el más grande de la web, será donde, 
 en el aparecerá todo el contenido de la web de las diferentes páginas que se irán creando,
 para la página de inicio aparecerá un mensaje de bienvenida al usuario además de una explicación de la funcionalidad de la web 
