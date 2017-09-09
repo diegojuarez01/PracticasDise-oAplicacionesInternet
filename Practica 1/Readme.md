@@ -3,7 +3,7 @@ Aplicaciones Web con ASP, JSP, Ajax y Java Applets.
 # **Estructura de las páginas**
 Decidir como estructurar la página (aplicarlo a la página de inicio que servira de guia para las demás)
 
- * Header (compuesto por 2 elementos)
+# * Header (compuesto por 2 elementos)
   1. Una imagen que sera nuestro logo de empresa.
   2. Titulo de la web ("YOUNG TU WEB PARA VIAJES AEREOS").
  En la parte del CSS se aplica un color similar al del logo siguiendo de ejemplo en toda la web, ademas de los tamaños de los elementos que componen el header.
