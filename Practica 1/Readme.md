@@ -32,7 +32,7 @@ Por ultimo para acabar con la estructura nuestra web tendremos el Footer en el q
 
 ## Desarrollo de la interfaz básica
 
-Ahora que tenemos la estructura que va a seguir la web, hay que empezar a crear nuevas páginas y darles funcionalidad a estas, se mantendran la estructura para todas las páginas de la web, solo cambiara el contenido dentro de <Section>
+Ahora que tenemos la estructura que va a seguir la web, hay que empezar a crear nuevas páginas y darles funcionalidad a estas, se mantendran la estructura para todas las páginas de la web, solo cambiara el contenido dentro de `<Section>`
 #### Pagina ubicacion.
 
 Ubicación en la que únicamente he añadido un iframe con un enlace a googlemaps y algunas propiedades dentro de este para darle una forma que se adecuara con la que iba a seguir la página.
