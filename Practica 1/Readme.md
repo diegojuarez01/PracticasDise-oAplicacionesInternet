@@ -156,4 +156,99 @@ Se debe poder cancelar la reserva, le asignamos a dos variables los valores de l
 
 Si todo sale bien y se cancela la reserva se mostrara un `alert` que indicara que el `idreserva` se ha cancelado correctamente y volveremos a la página de `<inicio.asp>` con un `server.transfer`.
 
+## **Inclusión de técnicas AJAX en la interfaz de usuario**
+
+Una versión alternativa de la interfaz con AJAX, donde he cambiado la página de `<administrador.asp>`, para que el formulario de edición de los datos de la ciudad se ejecute en segundo plano. 
+
+Para ello he creado la función AJAXCrearobjeto() que se encargara de crear un objeto Ajax:
+
+```
+	//funcion para crear un objeto AJAX
+			function AJAXCrearObjeto(){
+				var obj;
+				if (window.XMLHttpRequest) {
+					obj = new XMLHttpRequest();
+				} else {
+				try {
+					obj = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch (e) {
+				alert('El navegador utilizado no está soportado');
+			}
+			}
+			return obj;
+			}
+```
+
+He creado una funciónCiudades(), esta función primero coge el valor del select del formulario Ciudades y lo guarda en una variable después crea un objeto Ajax, a continuación prepara la petición para pasar el valor del select obtenido previamente, luego creamos la recepción y por ultimo realizamos la petición.
+
+```
+
+//Funcion que llamaremos cuando haya un cambio en el select de ciudad de origen
+			function funcionCiudades(){
+				// Select del formulario de las ciudades
+				selectCiudades = document.forms.ciudades.Ciudades;
+				//Guardamos el valor en seleccionado de el select del formulario ciudades
+				seleccionado = selectCiudades.value;
+				//Creamos el objeto
+				objetoAjax = AJAXCrearObjeto();
+				// Preparamos la petición, le pasamos el valor del select Ciudades
+				objetoAjax.open('get', 'detallesciudad.asp?Ciudades=' + seleccionado, true);
+				//Preparamos la recepcion
+				objetoAjax.onreadystatechange = leerDatos;
+				//Realizamos la petecion
+				objetoAjax.send('');
+			}
+```
+He creado la función leerDatos que se encargara de cambiar el `<div> (“gestorciudades”)` por el response obtenido de objetoajax.
+
+```
+function leerDatos(){
+				if (objetoAjax.readyState == 4) {
+					//El div que va a variar
+					var miDiv = document.getElementById('gestorciudades');
+					//Modificamos su contenido
+					miDiv.innerHTML = objetoAjax.responseText;
+				}
+			}
+```
+
+Por último ponemos la función `funcionCiudades` en el onchange del select Ciudades.
+
+```
+	<select name="Ciudades" onChange="funcionCiudades();">
+```
+
+Ahora vamos a cambiar la página a la que le pasamos el valor seleccionado que será detallesciudad.asp. 
+
+Simplemente habrá que ejecutar la misma consulta que hacíamos antes, pero ahora el resultado que obtendremos lo guardamos en texto que será lo que devuelva el objetoAjax.
+
+Ahora para las listas desplegables de los vuelos disponibles para ciudad destino y ciudad de origen debemos de hacer que nos muestre sin recargar la página las ciudades para las que existen vuelos en la lista desplegable de ciudad destino.
+
+Para ello al igual que antes he creado las tres funciones leerDatos() que esta vez cambiara el div(“destino”) donde se encuentra la lista desplegable de ciudad destino, la función Ajaxcrearobjeto que será igual que la de antes.
+
+Y la funcionOrigen() que guardara el valor del select del formulario origen y luego lo pasara a otra página `<cambiarciudaddestino.asp>`.
+
+```
+//Funcion que llamaremos cuando haya un cambio en el select de ciudad de origen
+			function funcionOrigen(){
+				// Select del formulario origen
+				selectOrigen = document.forms.origen.CiudadDeOrigen;
+				//Guardamos el valor en seleccionado de el select del formulario Origen
+				seleccionado = selectOrigen.value;
+				//Creamos el objeto
+				objetoAjax = AJAXCrearObjeto();
+				// Preparamos la petición, le pasamos el valor del select CiudadDeOrigen
+				objetoAjax.open('get', 'cambiarciudaddestino.asp?CiudadDeOrigen=' + seleccionado, true);
+				//Preparamos la recepcion
+				objetoAjax.onreadystatechange = leerDatos;
+				//Realizamos la petecion
+				objetoAjax.send('');
+			}
+```
+
+En `<cambiarciudaddestino.asp>` debemos de recoger la variable de ciudaddeorigen, ahora lo que hay que hacer es obtener la idciudad para esa ciudad para luego saber que vuelos tiene esa idciudad como idciudadorigen.
+
+Una vez hacemos la consulta nos queda crear el resultado que queremos imprimir por pantalla en el div que variará, al poder haber más de una opción no como antes habrá que recorrer el rs e imprimir todos los valores posibles del `rs(“idciudaddestino”)`.
+
+
 
